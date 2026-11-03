@@ -1,0 +1,31 @@
+{
+  "_help": "Optional captions + placement per file. stage for memories: home | drive | tea | camp | trek | falls. stage for flora/fauna: tea | trek. order = position within its stage. Files not listed here are placed from their file name.",
+  "flora": {
+    "butterffly.jpeg":      { "label": "WILD BUTTERFLY",       "kind": "FAUNA", "stage": "tea",  "order": 1 },
+    "orange flower.jpeg":   { "label": "LANTANA BLOOMS",       "kind": "FLORA", "stage": "tea",  "order": 2 },
+    "floraflower2.jpeg":    { "label": "GREEN BRACT FLOWER",   "kind": "FLORA", "stage": "tea",  "order": 3 },
+    "butterfly.mp4":        { "label": "BUTTERFLY ON THE WING","kind": "FAUNA", "stage": "tea",  "order": 4 },
+    "white flower.jpeg":    { "label": "WHITE WILDFLOWER",     "kind": "FLORA", "stage": "tea",  "order": 5 },
+    "floraleave.jpeg":      { "label": "SUNLIT LEAVES",        "kind": "FLORA", "stage": "tea",  "order": 6 },
+    "insect.jpeg":          { "label": "BLACK BEETLE",         "kind": "FAUNA", "stage": "trek", "order": 1 },
+    "flouraflower.jpeg":    { "label": "PINK WILDFLOWERS",     "kind": "FLORA", "stage": "trek", "order": 2 },
+    "plant.jpeg":           { "label": "WILD SHRUB",           "kind": "FLORA", "stage": "trek", "order": 3 },
+    "plant2.jpeg":          { "label": "FOREST UNDERGROWTH",   "kind": "FLORA", "stage": "trek", "order": 4 },
+    "whiteflowertrek.jpeg": { "label": "TRAILSIDE STAR FLOWERS","kind": "FLORA", "stage": "trek", "order": 5 },
+    "frogwaterfall.mp4":    { "label": "FROG BY THE FALLS",    "kind": "FAUNA", "stage": "trek", "order": 6 }
+  },
+  "memories": {
+    "sunrise.jpeg":               { "label": "SUNRISE AT THE HOMESTAY", "stage": "skip",  "order": 1 },
+    "jepp photo.jpeg":            { "label": "JEEP RIDE SELFIE",        "stage": "skip", "order": 1 },
+    "teaestategirlsgang.jpeg":    { "label": "KELAGUR GIRLS GANG",   "stage": "tea",   "order": 1 },
+    "memories.png":              { "label": "THE WHOLE GANG",          "stage": "tea",   "order": 2 },
+    "viewpoint1.jpeg":            { "label": "INTO THE CLOUDS",         "stage": "trek",  "order": 1 },
+    "viewpoint2.jpeg":            { "label": "ROLLING GHAT HILLS",     "stage": "trek",  "order": 2 },
+    "treckingviewpointMain.jpeg": { "label": "THE MAIN VIEWPOINT",      "stage": "trek",  "order": 3 },
+    "viewpoint3.jpeg":            { "label": "MIST OVER THE RIDGE",     "stage": "trek",  "order": 4 },
+    "viewpoint4.jpeg":            { "label": "THE CLIFF EDGE",          "stage": "trek",  "order": 5 },
+    "waterfall.jpeg":             { "label": "BANDAJE FALLS",           "stage": "falls", "order": 1 },
+    "finalplace2.jpeg":           { "label": "REST AT THE FALLS",       "stage": "falls", "order": 2 },
+    "finalplace.jpeg":            { "label": "WE MADE IT!",             "stage": "falls", "order": 3 }
+  }
+}

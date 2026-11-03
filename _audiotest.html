@@ -1,0 +1,16 @@
+<!doctype html><script type="module">
+import { createSoundtrack } from './js/audio.js';
+const s = createSoundtrack(); await s.start();
+console.log('ctx state', s.ctx.state);
+const an = s.ctx.createAnalyser(); an.fftSize = 2048;
+const src = s.ctx.createMediaStreamSource(s.stream()); src.connect(an);
+const buf = new Float32Array(2048);
+for (const [name, inten] of [['alaap', .18], ['groove', .6], ['peak', .95]]) {
+  s.set({ intensity: inten, birds: .8 });
+  await new Promise(r => setTimeout(r, 2500));
+  let peak = 0, sum = 0, n = 0;
+  const t0 = performance.now();
+  while (performance.now() - t0 < 5000) { an.getFloatTimeDomainData(buf); for (const v of buf) { peak = Math.max(peak, Math.abs(v)); sum += v * v; n++; } await new Promise(r => setTimeout(r, 40)); }
+  console.log(`[audiotest] ${name}: rms=${Math.sqrt(sum / n).toFixed(4)} peak=${peak.toFixed(3)}`);
+}
+</script>
