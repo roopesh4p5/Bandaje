@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="theme-color" content="#10251b">
+  <title>Bandaje Falls Expedition</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">
+    {"imports":{
+      "three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+    }}
+  </script>
+</head>
+
+<body>
+  <main id="game">
+    <canvas id="world" aria-label="3D trek from Kelagur tea estate to Bandaje falls"></canvas>
+    <div class="vignette"></div>
+    <div class="grain"></div>
+
+    <header class="hud-top">
+      <div class="eyebrow"><span class="live-dot"></span> JOINT TRAVELLERS <i>//</i> CHIKKAMAGALURU</div>
+      <div class="mission-title">BANDAJE <span>FALLS TREK</span></div>
+    </header>
+    <div class="photo-count" id="photoCount"></div>
+
+    <div class="location-tag" id="locationTag">
+      <span class="tag-cross">⌖</span>
+      <span><b id="locationName">THE HOMESTAY</b><small id="locationSub">BASE CAMP</small></span>
+    </div>
+    <div class="coordinates" id="coordinates"></div>
+
+    <div class="chapter" id="chapter"><small id="chapterNo">CHAPTER 01</small><b id="chapterName">THE HOMESTAY</b><i></i></div>
+
+    <div class="holo-beam" id="holoBeam"></div>
+    <div class="holo" id="holo"></div>
+
+    <div class="bottom-hud">
+      <div class="route-readout">
+        <div class="readout-label"><span id="progressLabel">TREK PROGRESS</span> <span id="progressPct">00%</span></div>
+        <div class="progress-track"><div id="progressFill"></div></div>
+        <div class="readout-meta"><span id="distance">0.0 KM</span><span id="elevation">— M</span></div>
+      </div>
+      <div class="checkpoint"><span class="checkpoint-ring">✦</span><span><small>NEXT WAYPOINT</small><b id="nextWaypoint">TEA ESTATE</b></span></div>
+    </div>
+
+    <div class="finale" id="finale">
+      <div class="finale-kicker">EXPEDITION COMPLETE</div>
+      <div class="finale-title">BANDAJE<br><em>FALLS</em></div>
+      <div class="finale-sub">KELAGUR TEA ESTATE · RANI JHARI · DURGADAHALLI</div>
+      <img class="finale-logo" src="assets/logo.jpeg" alt="Joint Travellers">
+    </div>
+    <div class="fade" id="fade"></div>
+    <div class="cut" id="cut"></div>
+
+    <div class="logo-intro" id="logoIntro">
+      <img src="assets/logo.jpeg" alt="Joint Travellers">
+      <small>JOINT TRAVELLERS PRESENTS</small>
+      <b>BANDAJE FALLS TREK</b>
+      <span>KELAGUR TEA ESTATE → BANDAJE FALLS · 14 KM</span>
+    </div>
+
+    <div class="loading" id="loading">
+      <span id="loadingText">LOADING</span><i></i>
+    </div>
+  </main>
+  <a class="gallery-btn" href="https://drive.google.com/drive/folders/1PbZE8I8lQUygPzMv7ZEPJJK5rZU21dIs" target="_blank" rel="noopener" title="Open the trip photos & videos on Google Drive">▦ GALLERY</a>
+  <script type="module" src="app.js"></script>
+</body> 
+
+</html>
